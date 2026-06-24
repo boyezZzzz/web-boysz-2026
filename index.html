@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website Boysz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Favicon / tab icon -->
+  <link rel="icon" type="image/jpeg" href="sapurata.jpg" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-brand">
+      <img src="sapurata.jpg" alt="Logo Boysz" class="nav-logo" />
+      <span class="nav-brand-text">boysz</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#features">Fitur</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <!-- Badge greeting -->
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        <span>Hai, Selamat Datang! 👋</span>
+      </div>
+
+      <!-- Sub label -->
+      <p class="hero-sub-label">✦ &nbsp; W E B S I T E &nbsp; ✦</p>
+
+      <!-- Nama besar dengan typewriter + glow -->
+      <h1 class="hero-title">
+        <span class="hero-title-rgb" id="hero-typewriter">BOYSZ</span>
+      </h1>
+
+      <!-- Subtitle dengan shimmer -->
+      <p class="hero-subtitle">Tempat yang tepat untuk menemukan kegabutan kalian wkwk.</p>
+
+      <div class="hero-buttons">
+        <a href="#features" class="btn-primary">
+          <span class="btn-inner">Lihat Fitur</span>
+          <span class="btn-shine"></span>
+        </a>
+      </div>
+    </div>
+    <div class="hero-decoration">
+      <div class="circle circle-1"></div>
+      <div class="circle circle-2"></div>
+      <div class="circle circle-3"></div>
+    </div>
+  </section>
+
+  <!-- FEATURES SECTION (SLOT) -->
+  <section class="features" id="features">
+    <div class="container">
+      <h2 class="section-title">Fitur</h2>
+      <p class="section-subtitle">Fitur-fitur unggulan akan hadir di sini.</p>
+
+      <!-- ===== SLOT FITUR — tambahkan kartu fitur Anda di bawah ini ===== -->
+
+      <div class="features-grid">
+
+        <!-- FITUR: Get Contact -->
+        <div class="feature-card gc-card" id="btn-gc" role="button" tabindex="0" aria-label="Buka fitur Get Contact">
+          <div class="gc-card-header">
+            <div class="gc-icon">📱</div>
+            <span class="gc-badge">CONTACT</span>
+          </div>
+          <h3>Get Contact</h3>
+          <p>Cek nama pemilik nomor HP dari database GetContact — siapa di balik nomor tak dikenal?</p>
+          <div class="gc-cta">Cek Sekarang →</div>
+        </div>
+
+        <!-- FITUR: ChatGPT -->
+        <div class="feature-card gpt-card" id="btn-gpt" role="button" tabindex="0" aria-label="Buka fitur ChatGPT">
+          <div class="gpt-card-header">
+            <svg class="gpt-logo" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="gptGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#10a37f"/>
+                  <stop offset="100%" style="stop-color:#1a7f64"/>
+                </linearGradient>
+              </defs>
+              <rect x="8" y="8" width="104" height="104" rx="24" ry="24" fill="url(#gptGrad)"/>
+              <path d="M60 28 C44 28 31 39 31 53 C31 59 33 64 37 68 L35 82 L50 76 C53 77 56 78 60 78 C76 78 89 67 89 53 C89 39 76 28 60 28Z" fill="rgba(255,255,255,0.15)"/>
+              <circle cx="48" cy="54" r="5" fill="#fff"/>
+              <circle cx="60" cy="54" r="5" fill="#fff"/>
+              <circle cx="72" cy="54" r="5" fill="#fff"/>
+            </svg>
+            <span class="gpt-badge">AI</span>
+          </div>
+          <h3>ChatGPT</h3>
+          <p>Tanya apa saja ke ChatGPT — AI yang siap menjawab pertanyaan dan membantu pekerjaanmu.</p>
+          <div class="gpt-cta">Chat Sekarang →</div>
+        </div>
+
+        <!-- FITUR: Stalking Free Fire -->
+        <div class="feature-card ff-card" id="btn-ff-stalk" role="button" tabindex="0" aria-label="Buka fitur Stalking Free Fire">
+          <div class="ff-card-header">
+            <!-- Logo Free Fire SVG inline -->
+            <svg class="ff-logo" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="ffGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#ff6b00"/>
+                  <stop offset="100%" style="stop-color:#ffcc00"/>
+                </linearGradient>
+              </defs>
+              <!-- Flame shape -->
+              <path d="M60 10 C45 30 20 35 25 60 C28 75 38 82 38 82 C35 70 42 62 50 58 C48 68 54 75 60 80 C66 75 72 68 70 58 C78 62 85 70 82 82 C82 82 92 75 95 60 C100 35 75 30 60 10Z" fill="url(#ffGrad)"/>
+              <!-- Inner highlight -->
+              <path d="M60 30 C52 44 44 48 46 60 C48 68 54 72 54 72 C52 64 56 59 60 56 C64 59 68 64 66 72 C66 72 72 68 74 60 C76 48 68 44 60 30Z" fill="rgba(255,255,255,0.25)"/>
+              <!-- FF text -->
+              <text x="50%" y="105" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="18" font-weight="900" fill="url(#ffGrad)" letter-spacing="2">FF</text>
+            </svg>
+            <span class="ff-badge">STALK</span>
+          </div>
+          <h3>Stalking Free Fire</h3>
+          <p>Cek informasi lengkap akun Free Fire — level, rank, guild, dan lainnya hanya dengan UID.</p>
+          <div class="ff-cta">Coba Sekarang →</div>
+        </div>
+
+        <!-- FITUR: Stalking Instagram -->
+        <div class="feature-card ig-card" id="btn-ig-stalk" role="button" tabindex="0" aria-label="Buka fitur Stalking Instagram">
+          <div class="ig-card-header">
+            <!-- Logo Instagram SVG inline -->
+            <svg class="ig-logo" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="igGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+                  <stop offset="0%"   style="stop-color:#f9ce34"/>
+                  <stop offset="30%"  style="stop-color:#ee2a7b"/>
+                  <stop offset="100%" style="stop-color:#6228d7"/>
+                </linearGradient>
+              </defs>
+              <!-- Rounded square body -->
+              <rect x="10" y="10" width="100" height="100" rx="28" ry="28" fill="url(#igGrad)"/>
+              <!-- Camera lens circle -->
+              <circle cx="60" cy="60" r="22" fill="none" stroke="#fff" stroke-width="7"/>
+              <!-- Top-right dot -->
+              <circle cx="87" cy="33" r="6" fill="#fff"/>
+              <!-- Square outline inner -->
+              <rect x="22" y="22" width="76" height="76" rx="18" ry="18" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="3"/>
+            </svg>
+            <span class="ig-badge">STALK</span>
+          </div>
+          <h3>Stalking Instagram</h3>
+          <p>Cek profil Instagram — followers, following, postingan, dan status akun hanya dengan username.</p>
+          <div class="ig-cta">Coba Sekarang →</div>
+        </div>
+
+        <!-- ===== Tambahkan fitur lain di sini ===== -->
+
+        <!-- FITUR: Download TikTok No Watermark -->
+        <div class="feature-card tt-card" id="btn-tt-dl" role="button" tabindex="0" aria-label="Buka fitur Download TikTok">
+          <div class="tt-card-header">
+            <!-- Logo TikTok SVG inline -->
+            <svg class="tt-logo" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="ttBg" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#010101"/>
+                  <stop offset="100%" style="stop-color:#1a1a1a"/>
+                </linearGradient>
+              </defs>
+              <rect x="5" y="5" width="110" height="110" rx="26" ry="26" fill="url(#ttBg)"/>
+              <!-- Cyan shadow note -->
+              <path d="M75 22 C75 22 75 58 75 68 C75 76 68 82 60 82 C52 82 45 76 45 68 C45 60 52 54 60 54 C62 54 64 54.5 66 55.5 L66 42 C63.5 41.3 61.8 41 60 41 C44.5 41 32 53.5 32 68 C32 82.5 44.5 95 60 95 C75.5 95 88 82.5 88 68 L88 38 C92 41 97 43 103 44 L103 31 C90 30 75 22 75 22Z" fill="#69c9d0" opacity="0.6" transform="translate(2,2)"/>
+              <!-- Red shadow note -->
+              <path d="M75 22 C75 22 75 58 75 68 C75 76 68 82 60 82 C52 82 45 76 45 68 C45 60 52 54 60 54 C62 54 64 54.5 66 55.5 L66 42 C63.5 41.3 61.8 41 60 41 C44.5 41 32 53.5 32 68 C32 82.5 44.5 95 60 95 C75.5 95 88 82.5 88 68 L88 38 C92 41 97 43 103 44 L103 31 C90 30 75 22 75 22Z" fill="#ee1d52" opacity="0.6" transform="translate(-2,-2)"/>
+              <!-- White main note -->
+              <path d="M75 22 C75 22 75 58 75 68 C75 76 68 82 60 82 C52 82 45 76 45 68 C45 60 52 54 60 54 C62 54 64 54.5 66 55.5 L66 42 C63.5 41.3 61.8 41 60 41 C44.5 41 32 53.5 32 68 C32 82.5 44.5 95 60 95 C75.5 95 88 82.5 88 68 L88 38 C92 41 97 43 103 44 L103 31 C90 30 75 22 75 22Z" fill="#fff"/>
+            </svg>
+            <span class="tt-badge">NO WM</span>
+          </div>
+          <h3>Download TikTok</h3>
+          <p>Download video TikTok tanpa watermark dan download audio MP3 — gratis, cepat, dan mudah.</p>
+          <div class="tt-cta">Coba Sekarang →</div>
+        </div>
+
+        <!-- FITUR: Fake Lobby FF -->
+        <div class="feature-card fl-card" id="btn-fl" role="button" tabindex="0" aria-label="Buka fitur Fake Lobby Free Fire">
+          <div class="fl-card-header">
+            <svg class="fl-logo" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="flGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#00c6ff"/>
+                  <stop offset="100%" style="stop-color:#0072ff"/>
+                </linearGradient>
+              </defs>
+              <rect x="8" y="8" width="104" height="104" rx="22" ry="22" fill="url(#flGrad)"/>
+              <rect x="22" y="42" width="76" height="42" rx="16" fill="rgba(255,255,255,0.15)"/>
+              <rect x="30" y="55" width="7" height="16" rx="3" fill="#fff"/>
+              <rect x="24" y="61" width="19" height="4" rx="2" fill="#fff"/>
+              <circle cx="82" cy="57" r="4" fill="#ff6b6b"/>
+              <circle cx="90" cy="63" r="4" fill="#ffd93d"/>
+              <circle cx="74" cy="63" r="4" fill="#6bcb77"/>
+              <circle cx="82" cy="69" r="4" fill="#4d96ff"/>
+              <ellipse cx="38" cy="84" rx="12" ry="7" fill="rgba(0,0,0,0.25)"/>
+              <ellipse cx="82" cy="84" rx="12" ry="7" fill="rgba(0,0,0,0.25)"/>
+            </svg>
+            <span class="fl-badge">FAKE</span>
+          </div>
+          <h3>Fake Lobby FF</h3>
+          <p>Buat screenshot fake lobby Free Fire dengan nickname kamu — tersedia 10 variasi tampilan.</p>
+          <div class="fl-cta">Coba Sekarang →</div>
+        </div>
+
+        <!-- FITUR: Berita Terkini -->
+        <div class="feature-card nws-card" id="btn-news" role="button" tabindex="0" aria-label="Buka fitur Berita Terkini">
+          <div class="nws-card-header">
+            <div class="nws-icon">📰</div>
+            <span class="nws-badge">LIVE</span>
+          </div>
+          <h3>Berita Terkini</h3>
+          <p>Baca berita terbaru dari Kompas langsung di sini, update setiap saat.</p>
+          <div class="nws-cta">Baca Sekarang →</div>
+        </div>
+
+        <!-- FITUR: Jadwal TV -->
+        <div class="feature-card tv-card" id="btn-tv" role="button" tabindex="0" aria-label="Buka fitur Jadwal TV">
+          <div class="tv-card-header">
+            <div class="tv-icon">📺</div>
+            <span class="tv-badge">TV</span>
+          </div>
+          <h3>Jadwal TV</h3>
+          <p>Cek jadwal acara TV hari ini — SCTV, RCTI, ANTV, GTV, Trans TV, dan banyak lagi.</p>
+          <div class="tv-cta">Cek Jadwal →</div>
+        </div>
+
+        <!-- FITUR: Cek Cuaca -->
+        <div class="feature-card wx-card" id="btn-wx" role="button" tabindex="0" aria-label="Buka fitur Cek Cuaca">
+          <div class="wx-card-header">
+            <div class="wx-icon">🌤️</div>
+            <span class="wx-badge">CUACA</span>
+          </div>
+          <h3>Cek Cuaca</h3>
+          <p>Cek kondisi cuaca terkini di kota mana saja — suhu, kelembaban, kecepatan angin, dan lebih.</p>
+          <div class="wx-cta">Cek Sekarang →</div>
+        </div>
+
+        <!-- FITUR: Cek Jarak -->
+        <div class="feature-card jk-card" id="btn-jk" role="button" tabindex="0" aria-label="Buka fitur Cek Jarak">
+          <div class="jk-card-header">
+            <div class="jk-icon">🗺️</div>
+            <span class="jk-badge">JARAK</span>
+          </div>
+          <h3>Cek Jarak</h3>
+          <p>Hitung jarak antar kota, estimasi waktu tempuh, biaya BBM, dan petunjuk arah lengkap.</p>
+          <div class="jk-cta">Cek Sekarang →</div>
+        </div>
+
+        <!-- FITUR: Download YouTube -->
+        <div class="feature-card yt-card" id="btn-yt-dl" role="button" tabindex="0" aria-label="Buka fitur Download YouTube">
+          <div class="yt-card-header">
+            <svg class="yt-logo" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="ytBg" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#ff0000"/>
+                  <stop offset="100%" style="stop-color:#cc0000"/>
+                </linearGradient>
+              </defs>
+              <rect x="5" y="25" width="110" height="70" rx="16" ry="16" fill="url(#ytBg)"/>
+              <polygon points="47,42 47,78 82,60" fill="#fff"/>
+            </svg>
+            <span class="yt-badge">YT</span>
+          </div>
+          <h3>Download YouTube</h3>
+          <p>Download video YouTube sebagai MP4 atau audio MP3 — gratis, cepat, tanpa watermark.</p>
+          <div class="yt-cta">Download Sekarang →</div>
+        </div>
+
+        <!-- FITUR: Upload Foto ke Link -->
+        <div class="feature-card up-card" id="btn-upload" role="button" tabindex="0" aria-label="Buka fitur Upload Foto">
+          <div class="up-card-header">
+            <div class="up-icon">🖼️</div>
+            <span class="up-badge">UPLOAD</span>
+          </div>
+          <h3>Upload Foto ke Link</h3>
+          <p>Upload foto dan dapatkan link permanen — mudah dibagikan ke siapa saja kapan saja.</p>
+          <div class="up-cta">Upload Sekarang →</div>
+        </div>
+
+      </div>
+
+      <!-- ===== AKHIR SLOT FITUR ===================================== -->
+
+  <!-- MODAL: FF Stalk -->
+  <div class="modal-overlay" id="modal-ff" role="dialog" aria-modal="true" aria-labelledby="modal-ff-title">
+    <div class="modal-box">
+      <button class="modal-close" id="modal-ff-close" aria-label="Tutup">&times;</button>
+
+      <div class="modal-header">
+        <svg class="ff-logo-sm" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="ffGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#ff6b00"/>
+              <stop offset="100%" style="stop-color:#ffcc00"/>
+            </linearGradient>
+          </defs>
+          <path d="M60 10 C45 30 20 35 25 60 C28 75 38 82 38 82 C35 70 42 62 50 58 C48 68 54 75 60 80 C66 75 72 68 70 58 C78 62 85 70 82 82 C82 82 92 75 95 60 C100 35 75 30 60 10Z" fill="url(#ffGrad2)"/>
+          <path d="M60 30 C52 44 44 48 46 60 C48 68 54 72 54 72 C52 64 56 59 60 56 C64 59 68 64 66 72 C66 72 72 68 74 60 C76 48 68 44 60 30Z" fill="rgba(255,255,255,0.25)"/>
+        </svg>
+        <div>
+          <h2 id="modal-ff-title">Stalking Free Fire</h2>
+          <p>Masukkan UID akun Free Fire yang ingin dicek</p>
+        </div>
+      </div>
+
+      <!-- INPUT FORM -->
+      <div class="modal-form" id="ff-form">
+        <input
+          type="text"
+          id="ff-uid-input"
+          placeholder="Contoh: 9165438607"
+          maxlength="20"
+          aria-label="UID Free Fire"
+          inputmode="numeric"
+        />
+        <button class="btn-confirm" id="ff-confirm-btn">
+          <span id="ff-btn-text">🔍 Konfirmasi</span>
+          <span class="spinner hidden" id="ff-spinner" aria-hidden="true"></span>
+        </button>
+        <p class="ff-error hidden" id="ff-error" role="alert"></p>
+        <p class="ff-hint" id="ff-hint">⏳ Proses bisa memakan waktu 5–15 detik</p>
+      </div>
+
+      <!-- RESULT SECTION -->
+      <div class="ff-result hidden" id="ff-result">
+        <!-- Profile Header -->
+        <div class="ff-profile-header">
+          <img id="ff-avatar" src="" alt="Avatar" class="ff-avatar-img" />
+          <div class="ff-profile-info">
+            <div class="ff-name-row">
+              <span id="ff-name" class="ff-username"></span>
+              <span id="ff-title-badge" class="ff-title-badge"></span>
+            </div>
+            <span class="ff-uid-label">UID: <span id="ff-uid-display"></span></span>
+            <p id="ff-bio" class="ff-bio"></p>
+          </div>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="ff-stats-grid">
+          <div class="ff-stat-card">
+            <span class="ff-stat-label">Level</span>
+            <span class="ff-stat-value" id="ff-level"></span>
+          </div>
+          <div class="ff-stat-card">
+            <span class="ff-stat-label">EXP</span>
+            <span class="ff-stat-value" id="ff-exp"></span>
+          </div>
+          <div class="ff-stat-card">
+            <span class="ff-stat-label">Likes</span>
+            <span class="ff-stat-value" id="ff-likes"></span>
+          </div>
+          <div class="ff-stat-card">
+            <span class="ff-stat-label">Honor</span>
+            <span class="ff-stat-value" id="ff-honor"></span>
+          </div>
+          <div class="ff-stat-card">
+            <span class="ff-stat-label">BR Rank</span>
+            <span class="ff-stat-value" id="ff-br-rank"></span>
+          </div>
+          <div class="ff-stat-card">
+            <span class="ff-stat-label">CS Rank</span>
+            <span class="ff-stat-value" id="ff-cs-rank"></span>
+          </div>
+        </div>
+
+        <!-- Info Rows -->
+        <div class="ff-info-rows">
+          <div class="ff-info-row"><span>Region</span><span id="ff-region"></span></div>
+          <div class="ff-info-row"><span>Bahasa</span><span id="ff-language"></span></div>
+          <div class="ff-info-row"><span>Elite Pass</span><span id="ff-elite"></span></div>
+          <div class="ff-info-row"><span>Bergabung</span><span id="ff-created"></span></div>
+          <div class="ff-info-row"><span>Login Terakhir</span><span id="ff-lastlogin"></span></div>
+          <div class="ff-info-row"><span>Avatar</span><span id="ff-avatar-name"></span></div>
+        </div>
+
+        <!-- Guild -->
+        <div class="ff-guild-box" id="ff-guild-box">
+          <div class="ff-guild-title">🏰 Guild</div>
+          <div class="ff-info-row"><span>Nama Guild</span><span id="ff-guild-name"></span></div>
+          <div class="ff-info-row"><span>ID Guild</span><span id="ff-guild-id"></span></div>
+          <div class="ff-info-row"><span>Level Guild</span><span id="ff-guild-level"></span></div>
+          <div class="ff-info-row"><span>Anggota</span><span id="ff-guild-members"></span></div>
+        </div>
+
+        <button class="btn-reset" id="ff-reset-btn">🔄 Cek UID Lain</button>
+      </div>
+    </div>
+  </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2026 <strong>Boysz</strong>. All rights reserved.</p>
+  </footer>
+
+  <!-- MODAL: IG Stalk -->
+  <div class="modal-overlay ig-modal-overlay" id="modal-ig" role="dialog" aria-modal="true" aria-labelledby="modal-ig-title">
+    <div class="modal-box ig-modal-box">
+      <button class="modal-close ig-modal-close" id="modal-ig-close" aria-label="Tutup">&times;</button>
+
+      <div class="modal-header">
+        <svg class="ig-logo-sm" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="igGrad2" x1="0%" y1="100%" x2="100%" y2="0%">
+              <stop offset="0%"   style="stop-color:#f9ce34"/>
+              <stop offset="30%"  style="stop-color:#ee2a7b"/>
+              <stop offset="100%" style="stop-color:#6228d7"/>
+            </linearGradient>
+          </defs>
+          <rect x="10" y="10" width="100" height="100" rx="28" ry="28" fill="url(#igGrad2)"/>
+          <circle cx="60" cy="60" r="22" fill="none" stroke="#fff" stroke-width="7"/>
+          <circle cx="87" cy="33" r="6" fill="#fff"/>
+        </svg>
+        <div>
+          <h2 id="modal-ig-title">Stalking Instagram</h2>
+          <p>Masukkan username akun Instagram yang ingin dicek</p>
+        </div>
+      </div>
+
+      <!-- INPUT FORM -->
+      <div class="modal-form ig-modal-form" id="ig-form">
+        <div class="ig-input-wrap">
+          <span class="ig-at">@</span>
+          <input
+            type="text"
+            id="ig-username-input"
+            placeholder="contoh: boysz"
+            maxlength="30"
+            aria-label="Username Instagram"
+            autocomplete="off"
+            autocapitalize="none"
+            spellcheck="false"
+          />
+        </div>
+        <button class="btn-confirm ig-btn-confirm" id="ig-confirm-btn">
+          <span id="ig-btn-text">🔍 Konfirmasi</span>
+          <span class="spinner hidden" id="ig-spinner" aria-hidden="true"></span>
+        </button>
+        <p class="ff-error hidden" id="ig-error" role="alert"></p>
+      </div>
+
+      <!-- RESULT SECTION -->
+      <div class="ig-result hidden" id="ig-result">
+        <!-- Profile Header -->
+        <div class="ig-profile-header">
+          <img id="ig-avatar" src="" alt="Foto Profil" class="ig-avatar-img" />
+          <div class="ig-profile-info">
+            <div class="ig-name-row">
+              <span id="ig-username-display" class="ig-username"></span>
+              <span id="ig-verified-badge" class="ig-verified hidden" aria-label="Akun terverifikasi">✔</span>
+              <span id="ig-private-badge" class="ig-private-badge hidden">🔒 Private</span>
+            </div>
+            <span id="ig-fullname" class="ig-fullname"></span>
+            <p id="ig-bio-display" class="ff-bio"></p>
+            <a id="ig-external-url" class="ig-ext-url hidden" target="_blank" rel="noopener noreferrer"></a>
+          </div>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="ig-stats-grid">
+          <div class="ig-stat-card">
+            <span class="ff-stat-value" id="ig-posts"></span>
+            <span class="ff-stat-label">Postingan</span>
+          </div>
+          <div class="ig-stat-card">
+            <span class="ff-stat-value" id="ig-followers"></span>
+            <span class="ff-stat-label">Followers</span>
+          </div>
+          <div class="ig-stat-card">
+            <span class="ff-stat-value" id="ig-following"></span>
+            <span class="ff-stat-label">Following</span>
+          </div>
+        </div>
+
+        <button class="btn-reset ig-btn-reset" id="ig-reset-btn">🔄 Cek Username Lain</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: TikTok Download -->
+  <div class="modal-overlay tt-modal-overlay" id="modal-tt" role="dialog" aria-modal="true" aria-labelledby="modal-tt-title">
+    <div class="modal-box tt-modal-box">
+      <button class="modal-close tt-modal-close" id="modal-tt-close" aria-label="Tutup">&times;</button>
+
+      <div class="modal-header">
+        <svg class="tt-logo-sm" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="5" y="5" width="110" height="110" rx="26" ry="26" fill="#010101"/>
+          <path d="M75 22 C75 22 75 58 75 68 C75 76 68 82 60 82 C52 82 45 76 45 68 C45 60 52 54 60 54 C62 54 64 54.5 66 55.5 L66 42 C63.5 41.3 61.8 41 60 41 C44.5 41 32 53.5 32 68 C32 82.5 44.5 95 60 95 C75.5 95 88 82.5 88 68 L88 38 C92 41 97 43 103 44 L103 31 C90 30 75 22 75 22Z" fill="#69c9d0" opacity="0.6" transform="translate(2,2)"/>
+          <path d="M75 22 C75 22 75 58 75 68 C75 76 68 82 60 82 C52 82 45 76 45 68 C45 60 52 54 60 54 C62 54 64 54.5 66 55.5 L66 42 C63.5 41.3 61.8 41 60 41 C44.5 41 32 53.5 32 68 C32 82.5 44.5 95 60 95 C75.5 95 88 82.5 88 68 L88 38 C92 41 97 43 103 44 L103 31 C90 30 75 22 75 22Z" fill="#ee1d52" opacity="0.6" transform="translate(-2,-2)"/>
+          <path d="M75 22 C75 22 75 58 75 68 C75 76 68 82 60 82 C52 82 45 76 45 68 C45 60 52 54 60 54 C62 54 64 54.5 66 55.5 L66 42 C63.5 41.3 61.8 41 60 41 C44.5 41 32 53.5 32 68 C32 82.5 44.5 95 60 95 C75.5 95 88 82.5 88 68 L88 38 C92 41 97 43 103 44 L103 31 C90 30 75 22 75 22Z" fill="#fff"/>
+        </svg>
+        <div>
+          <h2 id="modal-tt-title">Download TikTok</h2>
+          <p>Tempel link video TikTok untuk didownload tanpa watermark</p>
+        </div>
+      </div>
+
+      <!-- INPUT FORM -->
+      <div class="modal-form tt-modal-form" id="tt-form">
+        <input
+          type="url"
+          id="tt-url-input"
+          placeholder="https://vt.tiktok.com/..."
+          aria-label="URL TikTok"
+          autocomplete="off"
+          spellcheck="false"
+        />
+        <button class="btn-confirm tt-btn-confirm" id="tt-confirm-btn">
+          <span id="tt-btn-text">⬇️ Download</span>
+          <span class="spinner hidden" id="tt-spinner" aria-hidden="true"></span>
+        </button>
+        <p class="ff-error hidden" id="tt-error" role="alert"></p>
+      </div>
+
+      <!-- RESULT SECTION -->
+      <div class="tt-result hidden" id="tt-result">
+
+        <!-- Caption & Author -->
+        <div class="tt-info-box">
+          <p class="tt-author" id="tt-author"></p>
+          <p class="tt-caption" id="tt-caption"></p>
+        </div>
+
+        <!-- Download Buttons -->
+        <div class="tt-dl-buttons">
+          <a id="tt-dl-video" href="#" target="_blank" rel="noopener noreferrer" class="tt-dl-btn tt-dl-video">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Video (No Watermark)
+          </a>
+          <a id="tt-dl-audio" href="#" target="_blank" rel="noopener noreferrer" class="tt-dl-btn tt-dl-audio">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+            Download Audio (MP3)
+          </a>
+        </div>
+
+        <button class="btn-reset tt-btn-reset" id="tt-reset-btn">🔄 Download Video Lain</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: Berita Terkini -->
+  <div class="modal-overlay nws-modal-overlay" id="modal-news" role="dialog" aria-modal="true" aria-labelledby="modal-news-title">
+    <div class="modal-box nws-modal-box">
+      <button class="modal-close" id="modal-news-close" aria-label="Tutup">&times;</button>
+      <div class="modal-header">
+        <div class="nws-modal-icon">📰</div>
+        <div>
+          <h2 id="modal-news-title">Berita Terkini</h2>
+          <p>Sumber: Kompas.com</p>
+        </div>
+      </div>
+      <div class="nws-list" id="nws-list">
+        <div class="news-loading"><span class="spinner news-spinner"></span><span>Memuat berita...</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: Jadwal TV -->
+  <div class="modal-overlay tv-modal-overlay" id="modal-tv" role="dialog" aria-modal="true" aria-labelledby="modal-tv-title">
+    <div class="modal-box tv-modal-box">
+      <button class="modal-close" id="modal-tv-close" aria-label="Tutup">&times;</button>
+      <div class="modal-header">
+        <div class="tv-modal-icon">📺</div>
+        <div>
+          <h2 id="modal-tv-title">Jadwal TV</h2>
+          <p>Pilih channel atau ketik manual</p>
+        </div>
+      </div>
+
+      <!-- Channel buttons -->
+      <div class="tv-channels">
+        <button class="tv-ch-btn active" data-ch="sctv">SCTV</button>
+        <button class="tv-ch-btn" data-ch="rcti">RCTI</button>
+        <button class="tv-ch-btn" data-ch="antv">ANTV</button>
+        <button class="tv-ch-btn" data-ch="gtv">GTV</button>
+        <button class="tv-ch-btn" data-ch="mnctv">MNCTV</button>
+        <button class="tv-ch-btn" data-ch="transtv">Trans TV</button>
+        <button class="tv-ch-btn" data-ch="trans7">Trans 7</button>
+        <button class="tv-ch-btn" data-ch="indosiar">Indosiar</button>
+        <button class="tv-ch-btn" data-ch="tvone">tvOne</button>
+        <button class="tv-ch-btn" data-ch="metrotv">Metro TV</button>
+        <button class="tv-ch-btn" data-ch="kompastv">Kompas TV</button>
+        <button class="tv-ch-btn" data-ch="net">NET.</button>
+      </div>
+
+      <!-- Input manual -->
+      <div class="tv-manual-wrap">
+        <input type="text" id="tv-manual-input" placeholder="Ketik nama channel manual..." autocomplete="off" spellcheck="false" aria-label="Input channel manual" />
+        <button class="tv-manual-btn" id="tv-manual-btn">Cari</button>
+      </div>
+
+      <!-- Loading / result -->
+      <div class="tv-result" id="tv-result">
+        <div class="news-loading"><span class="spinner news-spinner"></span><span>Memuat jadwal...</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: Fake Lobby FF -->
+  <div class="modal-overlay fl-modal-overlay" id="modal-fl" role="dialog" aria-modal="true" aria-labelledby="modal-fl-title">
+    <div class="modal-box fl-modal-box">
+      <button class="modal-close fl-modal-close" id="modal-fl-close" aria-label="Tutup">&times;</button>
+
+      <div class="modal-header">
+        <svg class="fl-logo-sm" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="flGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#00c6ff"/>
+              <stop offset="100%" style="stop-color:#0072ff"/>
+            </linearGradient>
+          </defs>
+          <rect x="8" y="8" width="104" height="104" rx="22" ry="22" fill="url(#flGrad2)"/>
+          <rect x="22" y="42" width="76" height="42" rx="16" fill="rgba(255,255,255,0.15)"/>
+          <rect x="30" y="55" width="7" height="16" rx="3" fill="#fff"/>
+          <rect x="24" y="61" width="19" height="4" rx="2" fill="#fff"/>
+          <circle cx="82" cy="57" r="4" fill="#ff6b6b"/>
+          <circle cx="90" cy="63" r="4" fill="#ffd93d"/>
+          <circle cx="74" cy="63" r="4" fill="#6bcb77"/>
+          <circle cx="82" cy="69" r="4" fill="#4d96ff"/>
+        </svg>
+        <div>
+          <h2 id="modal-fl-title">Fake Lobby FF</h2>
+          <p>Masukkan nickname dan pilih versi tampilan</p>
+        </div>
+      </div>
+
+      <!-- INPUT FORM -->
+      <div class="modal-form fl-modal-form" id="fl-form">
+        <input
+          type="text"
+          id="fl-nickname-input"
+          placeholder="Masukkan nickname kamu..."
+          maxlength="20"
+          aria-label="Nickname Free Fire"
+          autocomplete="off"
+          spellcheck="false"
+        />
+
+        <!-- Pilihan versi 1-10 -->
+        <div class="fl-version-label">Pilih Versi Tampilan:</div>
+        <div class="fl-version-grid" id="fl-version-grid">
+          <!-- Di-generate oleh JS -->
+        </div>
+
+        <button class="btn-confirm fl-btn-confirm" id="fl-confirm-btn">
+          <span id="fl-btn-text">🎮 Generate</span>
+          <span class="spinner hidden" id="fl-spinner" aria-hidden="true"></span>
+        </button>
+        <p class="ff-error hidden" id="fl-error" role="alert"></p>
+        <p class="ff-hint">⏳ Proses bisa memakan waktu beberapa detik</p>
+      </div>
+
+      <!-- RESULT SECTION -->
+      <div class="fl-result hidden" id="fl-result">
+        <div class="fl-result-header">
+          <span id="fl-result-label">🎮 Hasil Fake Lobby</span>
+        </div>
+        <div class="fl-img-wrap">
+          <img id="fl-result-img" src="" alt="Fake Lobby FF" class="fl-result-img" />
+        </div>
+        <div class="fl-dl-wrap">
+          <a id="fl-dl-btn" href="#" download="fake-lobby-ff.jpg" class="tt-dl-btn tt-dl-video fl-dl-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Gambar
+          </a>
+        </div>
+        <button class="btn-reset fl-btn-reset" id="fl-reset-btn">🔄 Buat Lagi</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: ChatGPT -->
+  <div class="modal-overlay gpt-modal-overlay" id="modal-gpt" role="dialog" aria-modal="true" aria-labelledby="modal-gpt-title">
+    <div class="modal-box gpt-modal-box">
+
+      <!-- Header -->
+      <div class="gpt-modal-header">
+        <div class="gpt-header-left">
+          <svg width="28" height="28" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs><linearGradient id="gptGrad3" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#10a37f"/><stop offset="100%" style="stop-color:#1a7f64"/></linearGradient></defs>
+            <rect x="8" y="8" width="104" height="104" rx="24" ry="24" fill="url(#gptGrad3)"/>
+            <circle cx="48" cy="54" r="5" fill="#fff"/><circle cx="60" cy="54" r="5" fill="#fff"/><circle cx="72" cy="54" r="5" fill="#fff"/>
+          </svg>
+          <div>
+            <h2 id="modal-gpt-title">ChatGPT</h2>
+            <span class="gpt-model-label" id="gpt-model-label">ChatGPT 5 Nano</span>
+          </div>
+        </div>
+        <div class="gpt-header-right">
+          <button class="gpt-clear-btn" id="gpt-clear-btn" title="Hapus riwayat chat" aria-label="Hapus riwayat">🗑️</button>
+          <button class="modal-close gpt-close" id="modal-gpt-close" aria-label="Tutup">&times;</button>
+        </div>
+      </div>
+
+      <!-- Chat messages -->
+      <div class="gpt-chat-wrap" id="gpt-chat-wrap" role="log" aria-live="polite" aria-label="Riwayat percakapan">
+        <!-- Pesan welcome -->
+        <div class="gpt-msg gpt-msg-ai">
+          <div class="gpt-msg-avatar">🤖</div>
+          <div class="gpt-msg-bubble">
+            Halo bang! Boysz AI siap membantu abang kapan pun! 🍄✨ Ada yang bisa boysz ai bantu nih? 😄
+          </div>
+        </div>
+      </div>
+
+      <!-- Input area -->
+      <div class="gpt-input-area">
+        <textarea
+          id="gpt-input"
+          class="gpt-textarea"
+          placeholder="Ketik pertanyaanmu di sini..."
+          rows="1"
+          maxlength="2000"
+          aria-label="Pesan untuk ChatGPT"
+          spellcheck="false"
+        ></textarea>
+        <button class="gpt-send-btn" id="gpt-send-btn" aria-label="Kirim pesan">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="ff-stalk.js"></script>
+  <script src="ig-stalk.js"></script>
+  <script src="tt-download.js"></script>
+  <script src="berita.js"></script>
+  <script src="fl-lobby.js"></script>
+  <script src="jadwal-tv.js"></script>
+  <script src="chatgpt.js"></script>
+
+  <!-- MODAL: Cek Cuaca -->
+  <div class="modal-overlay wx-modal-overlay" id="modal-wx" role="dialog" aria-modal="true" aria-labelledby="modal-wx-title">
+    <div class="modal-box wx-modal-box">
+      <button class="modal-close" id="modal-wx-close" aria-label="Tutup">&times;</button>
+      <div class="modal-header">
+        <div class="wx-modal-icon">🌤️</div>
+        <div>
+          <h2 id="modal-wx-title">Cek Cuaca</h2>
+          <p>Masukkan nama kota</p>
+        </div>
+      </div>
+      <div class="modal-form wx-modal-form" id="wx-form">
+        <div class="wx-input-row">
+          <input type="text" id="wx-city-input" placeholder="Contoh: Jakarta, Surabaya, Bandung..." autocomplete="off" spellcheck="false" aria-label="Nama kota" />
+          <button class="wx-search-btn" id="wx-search-btn">
+            <span id="wx-btn-text">🔍</span>
+            <span class="spinner hidden" id="wx-spinner"></span>
+          </button>
+        </div>
+        <!-- Quick city buttons -->
+        <div class="wx-quick-cities">
+          <button class="wx-city-btn" data-city="Jakarta">Jakarta</button>
+          <button class="wx-city-btn" data-city="Surabaya">Surabaya</button>
+          <button class="wx-city-btn" data-city="Bandung">Bandung</button>
+          <button class="wx-city-btn" data-city="Medan">Medan</button>
+          <button class="wx-city-btn" data-city="Makassar">Makassar</button>
+          <button class="wx-city-btn" data-city="Semarang">Semarang</button>
+          <button class="wx-city-btn" data-city="Yogyakarta">Yogyakarta</button>
+          <button class="wx-city-btn" data-city="Palembang">Palembang</button>
+        </div>
+        <p class="ff-error hidden" id="wx-error" role="alert"></p>
+      </div>
+      <div class="wx-result hidden" id="wx-result"></div>
+    </div>
+  </div>
+
+  <!-- MODAL: Cek Jarak -->
+  <div class="modal-overlay jk-modal-overlay" id="modal-jk" role="dialog" aria-modal="true" aria-labelledby="modal-jk-title">
+    <div class="modal-box jk-modal-box">
+      <button class="modal-close" id="modal-jk-close" aria-label="Tutup">&times;</button>
+      <div class="modal-header">
+        <div class="jk-modal-icon">🗺️</div>
+        <div>
+          <h2 id="modal-jk-title">Cek Jarak</h2>
+          <p>Masukkan kota asal dan tujuan</p>
+        </div>
+      </div>
+      <div class="modal-form jk-modal-form" id="jk-form">
+        <input type="text" id="jk-from-input" placeholder="Kota asal — contoh: Cilacap" autocomplete="off" spellcheck="false" aria-label="Kota asal" />
+        <input type="text" id="jk-to-input"   placeholder="Kota tujuan — contoh: Tasikmalaya" autocomplete="off" spellcheck="false" aria-label="Kota tujuan" />
+        <button class="btn-confirm jk-btn-confirm" id="jk-confirm-btn">
+          <span id="jk-btn-text">📍 Hitung Jarak</span>
+          <span class="spinner hidden" id="jk-spinner"></span>
+        </button>
+        <p class="ff-error hidden" id="jk-error" role="alert"></p>
+      </div>
+      <div class="jk-result hidden" id="jk-result"></div>
+    </div>
+  </div>
+
+  <script src="cuaca.js"></script>
+  <script src="jarak.js"></script>
+
+  <!-- MODAL: Download YouTube -->
+  <div class="modal-overlay yt-modal-overlay" id="modal-yt" role="dialog" aria-modal="true" aria-labelledby="modal-yt-title">
+    <div class="modal-box yt-modal-box">
+      <button class="modal-close yt-modal-close" id="modal-yt-close" aria-label="Tutup">&times;</button>
+      <div class="modal-header">
+        <svg class="yt-logo-sm" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="5" y="25" width="110" height="70" rx="16" ry="16" fill="#ff0000"/>
+          <polygon points="47,42 47,78 82,60" fill="#fff"/>
+        </svg>
+        <div>
+          <h2 id="modal-yt-title">Download YouTube</h2>
+          <p>Tempel link video YouTube untuk didownload</p>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="modal-form yt-modal-form" id="yt-form">
+        <input
+          type="url"
+          id="yt-url-input"
+          placeholder="https://www.youtube.com/watch?v=..."
+          aria-label="URL YouTube"
+          autocomplete="off"
+          spellcheck="false"
+        />
+        <button class="btn-confirm yt-btn-confirm" id="yt-confirm-btn">
+          <span id="yt-btn-text">🔍 Proses</span>
+          <span class="spinner hidden" id="yt-spinner" aria-hidden="true"></span>
+        </button>
+        <p class="ff-error hidden" id="yt-error" role="alert"></p>
+        <p class="ff-hint">⏳ Proses bisa memakan waktu 5–15 detik</p>
+      </div>
+
+      <!-- Result -->
+      <div class="yt-result hidden" id="yt-result">
+        <div class="yt-video-info">
+          <img id="yt-thumb" src="" alt="Thumbnail" class="yt-thumb" />
+          <div class="yt-meta">
+            <div id="yt-title" class="yt-title"></div>
+            <div id="yt-duration" class="yt-duration"></div>
+          </div>
+        </div>
+        <div class="yt-dl-buttons">
+          <a id="yt-dl-mp4" href="#" target="_blank" rel="noopener noreferrer" class="tt-dl-btn yt-dl-mp4">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download MP4 (Video)
+          </a>
+        </div>
+        <button class="btn-reset yt-reset-btn" id="yt-reset-btn">🔄 Download Video Lain</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="yt-download.js"></script>
+
+  <!-- MODAL: Get Contact -->
+  <div class="modal-overlay gc-modal-overlay" id="modal-gc" role="dialog" aria-modal="true" aria-labelledby="modal-gc-title">
+    <div class="modal-box gc-modal-box">
+      <button class="modal-close" id="modal-gc-close" aria-label="Tutup">&times;</button>
+      <div class="modal-header">
+        <div class="gc-modal-icon">📱</div>
+        <div>
+          <h2 id="modal-gc-title">Get Contact</h2>
+          <p>Cek nama pemilik nomor HP</p>
+        </div>
+      </div>
+      <div class="modal-form gc-modal-form" id="gc-form">
+        <div class="gc-input-wrap">
+          <span class="gc-prefix">+62</span>
+          <input
+            type="tel"
+            id="gc-phone-input"
+            placeholder="895326700138"
+            maxlength="15"
+            aria-label="Nomor HP tanpa +62"
+            inputmode="numeric"
+            autocomplete="off"
+          />
+        </div>
+        <p class="gc-hint-text">Masukkan nomor tanpa 0 atau +62. Contoh: 895326700138</p>
+        <button class="btn-confirm gc-btn-confirm" id="gc-confirm-btn">
+          <span id="gc-btn-text">🔍 Cek Nomor</span>
+          <span class="spinner hidden" id="gc-spinner" aria-hidden="true"></span>
+        </button>
+        <p class="ff-error hidden" id="gc-error" role="alert"></p>
+        <p class="ff-hint">⏳ Proses bisa memakan waktu beberapa detik</p>
+      </div>
+      <div class="gc-result hidden" id="gc-result"></div>
+    </div>
+  </div>
+
+  <script src="getcontact.js"></script>
+
+  <!-- MODAL: Upload Foto -->
+  <div class="modal-overlay up-modal-overlay" id="modal-upload" role="dialog" aria-modal="true" aria-labelledby="modal-upload-title">
+    <div class="modal-box up-modal-box">
+      <button class="modal-close" id="modal-upload-close" aria-label="Tutup">&times;</button>
+      <div class="modal-header">
+        <div class="up-modal-icon">🖼️</div>
+        <div>
+          <h2 id="modal-upload-title">Upload Foto ke Link</h2>
+          <p>Pilih foto lalu konfirmasi untuk mendapatkan link</p>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div id="upload-form">
+        <!-- Drop zone -->
+        <div class="up-dropzone" id="up-dropzone" role="button" tabindex="0" aria-label="Klik atau seret foto ke sini">
+          <div class="up-dropzone-inner" id="up-dropzone-inner">
+            <div class="up-drop-icon">📁</div>
+            <p class="up-drop-text">Klik atau seret foto ke sini</p>
+            <p class="up-drop-hint">JPG, PNG, GIF, WEBP — maks 200 MB</p>
+          </div>
+          <!-- Preview -->
+          <img id="up-preview-img" class="up-preview-img hidden" alt="Preview foto" />
+        </div>
+        <input type="file" id="up-file-input" accept="image/*" class="hidden" aria-label="Pilih file gambar" />
+
+        <!-- File info -->
+        <div class="up-file-info hidden" id="up-file-info">
+          <span class="up-file-name" id="up-file-name"></span>
+          <button class="up-remove-btn" id="up-remove-btn" aria-label="Hapus file">✕</button>
+        </div>
+
+        <button class="btn-confirm up-btn-confirm" id="up-confirm-btn" disabled>
+          <span id="up-btn-text">☁️ Upload</span>
+          <span class="spinner hidden" id="up-spinner" aria-hidden="true"></span>
+        </button>
+        <p class="ff-error hidden" id="up-error" role="alert"></p>
+      </div>
+
+      <!-- Result -->
+      <div class="up-result hidden" id="up-result">
+        <div class="up-result-card">
+          <img id="up-result-img" src="" alt="Foto terupload" class="up-result-thumb" />
+          <div class="up-result-meta">
+            <p class="up-result-filename" id="up-result-filename"></p>
+            <p class="up-result-size" id="up-result-size"></p>
+          </div>
+        </div>
+        <div class="up-url-wrap">
+          <input type="text" id="up-result-url" class="up-url-input" readonly aria-label="URL hasil upload" />
+          <button class="up-copy-btn" id="up-copy-btn" title="Salin link">📋</button>
+        </div>
+        <p class="up-copy-msg hidden" id="up-copy-msg">✅ Link berhasil disalin!</p>
+        <a id="up-open-link" href="#" target="_blank" rel="noopener noreferrer" class="up-open-link">🔗 Buka di tab baru</a>
+        <button class="btn-reset up-reset-btn" id="up-reset-btn">🔄 Upload Foto Lain</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="upload-foto.js"></script>
+</body>
+</html>

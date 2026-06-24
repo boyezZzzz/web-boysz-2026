@@ -153,7 +153,7 @@ const UploadFoto = {
     const json = await res.json();
     if (json.success && json.data?.url) {
       // Fix domain: i.ibb.co → i.ibb.com
-      const url = json.data.url.replace('i.ibb.co/', 'i.ibb.com/');
+      const url = json.data.url.replace('i.ibb.co.com/');
       return url;
     }
     throw new Error('imgbb: gagal');
